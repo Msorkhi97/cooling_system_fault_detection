@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Enviroments
+myvenv/
+
+# Model file 
+*.h5
+
+# Output
+outputs/

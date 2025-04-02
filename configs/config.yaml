@@ -1,0 +1,35 @@
+model:
+  configuration:
+    num_feature: 2 # Number of Feature that we want to use in the model 
+    num_class: 1
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 1
+  test_size: 0.1
+  val_size: 0.2
+  random_state: 42
+  optimizer: "adam"
+  loss: "binary_crossentropy"
+  metrics: ["accuracy"]
+
+data:
+  paths:
+    train: "data/train/"
+    test: "data/test/"
+  configuration:
+    num_feature : 4 # Number of input data feature
+    window_size: 960
+    step: 5
+    max_row: 2000 # Use the Number of row sample
+    max_value: 160 # for Normalizing
+    min_value: 60
+  feature_position: # our data set structure contain 4 data in each column
+    amb_tempreture: 0
+    water_tempreture: 1
+    flag: 2
+    fan_state: 3
+
+output:
+  path: "outputs"
