@@ -1,4 +1,4 @@
-# Cooling System Fault Detection (Sample)
+# Cooling System Fault Detection
 
 ## Overview  
 This project is a **time series classification model** designed to detect faults in a car's cooling system. It leverages deep learning techniques to analyze sensor data and classify the system's condition as either **healthy** or **faulty**.
